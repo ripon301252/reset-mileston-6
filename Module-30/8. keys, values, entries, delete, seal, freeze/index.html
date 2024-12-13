@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keys, values, entries, delete, seal, freeze</title>
+</head>
+<body>
+    <script>
+        const glass = {
+            name: 'glass', 
+            color: 'golden', 
+            price: 12, 
+            iscleander: true};
+        console.log(glass);
+
+        const keys = Object.keys(glass);
+        console.log(keys);
+
+        const values = Object.values(glass);
+        console.log(values);
+
+        const pair = Object.entries(glass);
+        console.log(pair);
+
+
+
+    </script>
+</body>
+</html>

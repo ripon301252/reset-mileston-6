@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var-let-const</title>
+</head>
+<body>
+
+
+    
+
+    <script>
+        // var : no reason to use var
+        // let : allow it to reassaign
+        // const : do not allow it to reassaign
+
+        const money = 25;
+        // money = 50;      //do not allow it to reassaign
+        const rich = money + 25;
+        console.log(rich);
+
+        let count = 0;
+        count = count + 10; // allow it to reassaign
+        console.log(count);
+
+        // Array 
+        const numbers = [2, 55, 56, 65];
+            //numbers = [60, 70, 75, 77];
+            numbers [1] = 66;
+            numbers.push(8, 9, 88)
+        console.log(numbers);
+
+
+        // object  allwase decleare by let 
+        const student = {name:'moyna', class:'4th', roll: '02'}
+        console.log(student);
+
+        student.name = 'asif'
+        console.log(student);
+
+
+        // loop
+        for(let i = 1; i < 40; i++){
+            console.log('Break', i)
+            if(i > 0){
+                break;
+            }
+        }
+
+        // loop
+        let sum = 0;
+        for (let i = 0; i < 10; i++){
+            const num = i;
+            sum = sum + num;
+        }
+        console.log('sum =', sum);
+
+        
+      
+        
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

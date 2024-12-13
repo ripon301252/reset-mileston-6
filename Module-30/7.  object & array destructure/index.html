@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object & array distructure</title>
+</head>
+<body>
+    <script>
+        const actor = {
+            name : 'Ananta',
+            age : 30,
+            phone : '0173824569',
+            money : 2016556
+        }
+
+        // if right side is an object left side of destructure will be object as well
+        const {name, age, phone, money: taka} = actor
+
+
+        // const phone = actor.phone;
+        // const name = actor.name;
+        // const age = actor.age;
+
+        console.log(phone);
+        console.log(phone);
+        console.log(phone);
+
+        console.log(name);
+        console.log(name);
+        console.log(name);
+        
+        console.log(age);
+        console.log(age);
+        console.log(age);
+        
+        console.log(taka);
+        console.log(taka);
+        console.log(taka);
+
+        // array destructure
+        const numbers = [45, 99];
+        const [first, second] = numbers;
+        const [x, y] = [12, 66];
+        console.log(x, y);
+
+        // advanced
+        function doubleThem(a, b){
+            return [a*2, b*2];
+        }
+        const [prothom, ditiyo] = doubleThem(6, 9);
+        console.log(prothom, ditiyo);
+
+
+
+
+
+    </script>
+</body>
+</html>

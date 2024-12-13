@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+<body>
+    <script>
+        // for of use on array or string not in object.
+        // for in use on object.
+        const numbers = [1, 2, 3, 4];
+        // for(let i = 0; i < numbers.length; i++){}
+        // while
+        for(const num of numbers){
+            console.log(num);
+        }
+
+        const nobab = 'siraj ud Doula';
+        for(const char of nobab){
+            console.log(char);
+        }
+
+        // object
+        const glass = {
+            name: 'glass', 
+            color: 'golden', 
+            price: 12, 
+            isCleaned: true};  
+
+        for(const key in glass){
+            const value = glass[key];
+            console.log(key, value);
+        }
+
+        // optional
+        //for (const key of glass){
+         //   console.log(key);
+        //} 
+        const keys = Object.keys(glass);
+        console.log(keys);
+        for(const key of keys){
+            const value = glass[key];
+            console.log(key, value);
+        }
+
+
+        // ------------------     practic problem-1   ------------------------
+
+        // 1. write an arrow function that will take 3 parameters, will multiply the parameters and will return the result.
+
+
+        // 2. write the following sentence in three lines and print the result.  (I am a web developer. I love to code. I love to eat biryani)
+
+
+        // 3. write an arrow function that will take 2 parameters: one parameter will come from you and the other parameter will be a default parameter. Add these two parameters and the result.
+
+
+
+
+
+         // ------------------     practic problem-2   ------------------------
+
+         // a) It will take an array where the array elements will be the name of your friends 
+         // b) check if the length pf each element is even length to a new array and return the result.
+
+
+
+
+         
+
+    </script>
+</body>
+</html>
