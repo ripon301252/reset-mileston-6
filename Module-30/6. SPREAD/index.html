@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPREAD</title>
+</head>
+<body>
+   <script>
+    // spread operator
+    const max = Math.max(6, 12, 36, 54, 99);
+    console.log(max);
+
+console.log('--------------------------------------')
+
+    const numbers = [3, 6, 9, 25, 45, 78, 90, 55];
+    const arrayMax = Math.max(numbers);
+    console.log(numbers);
+    console.log(...numbers);
+    console.log(arrayMax);
+    const arrayMax1 = Math.max(...numbers);
+    console.log(arrayMax1);
+
+console.log('--------------------------------------')
+
+
+    // use spread operator to copy
+    const nums = [4, 5, 87, 9];
+    const nums2 = nums;
+    nums2.push(12);
+    console.log(nums);
+    console.log(nums2);
+
+console.log('--------------------------------------')
+
+    const friend = [4, 6, 87, 10];
+    const bondhu = friend;
+    const dosto = [...friend] // copy
+    console.log(dosto);
+    friend .push(100);
+    console.log('dosto', dosto);
+    console.log('friend', friend);
+
+console.log('--------------------------------------')
+
+    // advanced
+    const sonkha = [...friend, 999]; // add extra element while copy
+    console.log('sonkha', sonkha);
+
+console.log('--------------------------------------')
+
+    let numbs = [3, 4, 5];
+    let allNumbs = [1, 2, ...numbs, 6, 7];
+    console.log('allnumbers', allNumbs);
+
+    
+    
+
+   
+
+    
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>

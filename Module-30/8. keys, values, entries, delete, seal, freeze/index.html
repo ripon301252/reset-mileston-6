@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keys, values, entries, delete, seal, freeze</title>
+</head>
+<body>
+    <script>
+        const glass = {
+            name: 'glass', 
+            color: 'golden', 
+            price: 12, 
+            isCleaned: true
+        };
+        console.log(glass);
+
+        // object property name
+        const keys = Object.keys(glass);  
+        console.log(keys);
+
+        // object value name
+        const values = Object.values(glass); 
+        console.log(values);
+
+        // joray joray (property name & value name)
+        const pair = Object.entries(glass); 
+        console.log(pair);
+        // array of array, two dimansional array
+        // [
+        //     ['name', 'glass']
+        //     ['color', 'golden']
+        //     ['price', 12]
+        //     ['iscleaned', true]
+        // ]
+            
+        // delete
+        delete glass.isCleaned
+        console.log(glass);
+
+        const {isCleaned, ...shortGlass} = glass;
+        console.log(shortGlass);
+
+        // seal (modify)
+        Object.seal(glass);
+        glass.source = 'Bangladesh';
+        glass.price = 5000;
+        delete glass.name
+        console.log(glass);
+
+        // freeze
+        Object.freeze(glass);
+        glass.source = 'Bangladesh';
+        glass.price = 5000;
+        delete glass.name
+        console.log(glass);
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
