@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise task</title>
+</head>
+<body>
+    <script>
+        // task-1: console.log the secondary school location of Soghia
+        let data = {
+            sophia: {
+                id: 33,
+                study: [
+                    {
+                        primary:[
+                            {school_name: 'ABC primary school'},
+                            {location: 'peters burg'}
+                        ]
+                    },
+                    {
+                        secondary:[
+                                {school_name: 'CBA primary school'},
+                                {location: 'St lorence'}
+                        ]
+                    }
+                ]
+            }
+        }
+        console.log(data.sophia.study[1].secondary[1].location);
+
+
+        // task-2: console.log output: Petersburg, Herry
+        let student = {
+            2222: {
+                name: 'Jack',
+                section: 'C',
+                class: 'IX',
+                address: {
+                    'buildling no': 12,
+                    'street': 'St Jonson',
+                    'city': 'Petersburg',
+                    'country': 'UK'
+                }
+            },
+            3333: {
+                name: 'Herry',
+                section:'D',
+                class: 'X',
+                address: {
+                    'buildling no': 85,
+                    'street': 'DC road',
+                    'city': 'Kachukhet',
+                    'country': 'Bangladesh'
+                }
+            }
+        }
+        console.log(student['2222'].address['city']);
+        console.log(student['3333'].name);
+
+
+        // task-3: access and them show habluder adda
+        // show output Beginner
+        let data2 = {
+            data: [
+                {
+                    bookId: 1,
+                    bookDetails: {
+                        name: 'habluder adda',
+                        catagory: 'XYZ',
+                        price: '20$'
+                    },
+                    bookCatagoty: 'Basic'
+                },
+                {
+                    bookId: 2,
+                    bookDetails: {
+                        name: 'gobluder adda',
+                        catagory: 'ABC',
+                        price: '40$'
+                    },
+                    bookCatagoty: 'Beginner'
+                }
+            ]
+        }
+        console.log(data2.data[0].bookDetails.name);
+        console.log(data2.data[1].bookCatagoty);
+    </script>
+</body>
+</html>

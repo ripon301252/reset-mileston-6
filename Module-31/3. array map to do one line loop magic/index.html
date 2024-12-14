@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <script>
+        // Option-1
+        const numbers = [4, 5, 2, 8, 10];
+
+        const doubled = [];
+        for(const num of numbers){
+            const double = num * 2;
+            doubled.push(double);
+        }
+        console.log(doubled);
+
+
+        // map ==> loops through each element of array and do the operation that you call function and hold the result fron each operation in an array finally returns you the array.
+
+        // Option-2
+        function doubleIt(num){
+            console.log('num now', num)
+            return num * 2;
+        }
+        const result = numbers.map(doubleIt);  // Call back function
+        console.log(result);
+
+
+        // Option-3
+        const double2 = n => n * 2;
+        const output = numbers.map(double2);
+        console.log(output);
+
+
+        // Option-4
+        const output2 = numbers.map(m => m * 2);
+        console.log(output2);
+
+        const fiveBonus = numbers.map(num => num + 5);
+        console.log(fiveBonus);
+
+        const twoMinus = numbers.map(n => n - 2);
+        console.log(twoMinus);
+
+        const devided = numbers.map(d => d / 2);
+        console.log(devided);
+
+console.log('---------------------------------------------------------');
+
+const friends = ['Tom', 'John', 'Micheal', 'Oliver'];
+const lengths = friends.map(frnd => frnd.length);
+console.log(lengths);
+
+const firstLatter = friends.map(friend => friend[0]);
+console.log(firstLatter);
+
+// const lastLatter = friends.map(n => n[2]);
+// console.log(lastLatter);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

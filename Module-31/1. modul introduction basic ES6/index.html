@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 & Basic Recap</title>
+</head>
+<body>
+    <script>
+        /*
+            * 1. var, let, const
+            * 2. default parameter
+            * 3. template string
+            * 4. arrow function
+            * 5. destructuring and spread operator
+            * 6. Objet.keys, Object.values, Object.entries
+            * 7. for of used in  array and string,
+            * 8. for in loop used in object
+        */
+
+        // block scope  (let, const)
+        if(true){
+            console.log('block scop')
+        }
+
+        const a = 56;
+        const numbers = [56, 7, 8];
+        const person = {
+            name : 'sakib khan'
+        }
+
+        // template string
+        const massage = `Hi, ${person.name} has a: ${a} accesss to ${numbers[2]}`
+        console.log(massage);
+
+        // arrow function
+        const square = x => x * x;
+        const sum = (a, b) => a + b;
+
+        // destructuring and spread operator
+        const {age, z, ...others } = {x: 2, y: 5, z: 3, name: 'ovijeet', age: 55}
+        const [first, second, ...remaining] = ['aam', 'sam', 'jodu', 'modhu']
+    </script>
+</body>
+</html>
