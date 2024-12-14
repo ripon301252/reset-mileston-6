@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primitive and non-primitiv data type</title>
+</head>
+<body>
+   <script>
+        // common JS
+        /**
+         * // strongly typed Language
+            * 1. int a = 5;
+            * 2. string b = 'alim';
+            * 3. bool c = true;
+            * 4. object student = {name: 'noya daman', id: 55};
+            * 5. int[] numbers = [12, 45, 36];
+            * 6. int[] numbers = [12, 66, 98];
+            * 7. string[] friends = ['abul', 'babul', 'kabul'];
+         */ 
+
+        // Javascript is a  dynamic typed Lahguage
+        // primitive type
+         const a = 5;
+         const b = 'Samsu kopai na ar';
+         const d = true;
+
+        // Non-primitive
+         const ages = [45, 12, 55, 66];
+         const student = {id: 23, class: 7};
+
+         console.log(typeof a, typeof b, typeof d, typeof ages, typeof student);
+
+         let x = 5;
+         let y = x;
+         console.log(x, y);
+         y = 7;
+         console.log(x, y);
+
+         let p = {job: 'web developer'};
+         let q = p;
+         console.log(p, q);
+
+         q = {job:'Backend end'};
+         console.log(p, q);
+         
+         q.job = 'front end developer'
+         console.log(p, q);
+
+
+
+
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block scope , global scope</title>
+</head>
+<body>
+    <script>
+        // block scope
+        function add(a, b){
+            const total = a + b;
+            console.log(total);
+            if(b > a){
+                const sum = 25 + a + b;
+            }
+            else{
+                const sum = 5 + a + b;
+                var current = sum;
+            }
+            // console.log(sum)
+            console.log(current)
+            return total
+        }
+        add(2, 5);
+
+
+        prints()
+        // print10()
+        print9()
+        // hoisting
+        for(var i = 0; i < 5; i++){
+            console.log(i)
+        }
+        console.log('outside', i)
+
+
+        for(let n = 0; n < 5; n++){
+            console.log(n)
+        }
+        // console.log('outside', n)
+
+        function prints(){
+            console.log('inside print', 5)
+        }
+
+        const print10 = function(){
+            console.log('inside print10', 10)
+        }
+
+        var print9 = function(){
+            console.log('inside print9', 9)
+        }
+        
+    </script>
+</body>
+</html>

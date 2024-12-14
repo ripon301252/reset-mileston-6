@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double equal(==) vs triple equal(===)</title>
+</head>
+<body>
+    <script>
+        // always use ===
+        // equal comparison doesn't work for non-primitive
+
+        
+        const first = 2;    const third = 2;        const m = 1;       const q = 1;        const s = 0;        const a = '0';        
+        const second = 2;   const fourth = '2';     const n = true;    const r = false;    const t = false;    const b = false; 
+        
+        const c = {};    const e = [];
+        const d = {};    const f = [];
+
+        // double equal
+        if(e == f){
+            console.log('values are equal');
+        }
+        else{
+            console.log('values are not equal')
+        }
+
+
+
+        // triple equal
+        if(e === f){
+            console.log('values are equal');
+        }
+        else{
+            console.log('values are not equal');
+        }
+
+
+        // type coercion
+        // type conversion
+        // type custing
+
+    </script>
+</body>
+</html>

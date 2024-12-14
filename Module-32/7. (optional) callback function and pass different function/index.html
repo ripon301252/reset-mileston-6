@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function and pass different function</title>
+</head>
+<body>
+    <script>
+
+        function greeting(person){
+           console.log(person) ;
+          
+        }
+        const numbers = [4, 5, 6, 8];
+        const name = 'Halim mama';
+        const laptop = {name: 'Dell', brand: 'Lenovo', memory: '500 gb', price: 65000}
+        greeting(numbers);
+        greeting(name);
+        greeting(laptop );
+        greeting(laptop.name);
+        greeting(laptop.brand);
+        greeting(laptop.memory);
+        greeting(laptop.price);
+
+        /*
+        function greetings(greetingHandler, name){
+           //console.log(greetingHandler());
+           greetingHandler(name)
+        }
+        function greetingHandler(name){
+            console.log('Good Morning', name);
+        }
+        greetings(greetingHandler, 'Tom Hanks');
+        */
+
+
+       function greetings(greetingHandler, naam){
+        //console.log('Hello')
+        greetingHandler(naam);
+       }
+       function greetingHandler(naam){
+            console.log('Good Morning', naam)
+       }
+       greetings(greetingHandler, 'Tom Hanks');
+       greetings(greetingHandler, 'BAk BAK');
+
+       /*
+       document.getElementById('btn-submit').addEventListener('click', function(){
+            console.log('submit button clicked');
+       })
+       */  
+       function submitHandler(){
+            console.log('submit button clicked')
+       }
+       document.getElementById('btn-submit').addEventListener('click', submitHandler)
+
+
+
+    </script>
+</body>
+</html>
