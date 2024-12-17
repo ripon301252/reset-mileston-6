@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load posts and display on the  website with CSS</title>
+    <style>
+        .post{
+            background-color: aqua;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display All Post</h1>
+    </header>
+
+    <button onclick="createAPost()">Create A Post</button>
+    <button onclick="deletePost()">Delete A Post</button>
+    <button onclick="patchAPost()">patch A Post</button>
+    <main>
+        <section>
+            <h3>All posts are here</h3>
+            <div id="posts-container">
+
+            </div>
+        </section>
+    </main>
+    <h1><u>CRUD is the acronym for CREATE, READ, UPDATE and DELETE</u></h1>
+    <h3>REST API Methoods</h3>
+    <h3>CREATE = POST</h3>
+    <h3>READ = GET</h3>
+    <h3>UPDATE = PUT/PATCH</h3>
+    <h3>DELETE = DELETE</h3>
+
+    
+
+    
+
+
+    <script src="post.js"></script>
+</body>
+</html>
