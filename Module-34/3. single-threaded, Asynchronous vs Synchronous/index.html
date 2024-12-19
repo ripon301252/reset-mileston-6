@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single-threaded, Asynchronous vs Synchronous</title>
+</head>
+<body>
+    <script>
+        console.log(1);
+        console.log(2);
+        setTimeout(() => {
+            console.log('lazy logged', 3)
+        }, 3000)
+        // setTimeout(doSomething, 1000)
+
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //     .then(response => response.json())
+        //     .then(json => console.log(json))
+       
+        // doSomething()
+        console.log(4);
+        console.log(5);
+        console.log(6);
+        
+        function doSomething(){
+            console.log(3)
+        }
+
+        // Asynchronous vs Synchronous
+        /* Asynchronous is no-maintain sirial load. Synchronous is maintain sirial */
+
+    </script>
+</body>
+</html>
