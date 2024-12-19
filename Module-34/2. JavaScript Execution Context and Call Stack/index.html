@@ -14,7 +14,22 @@
         
         // Execution Context Type of two 
             // 1. Global Execution Context (GEC). = (base/default) (not inside of a function) (one)
-            // 2. Function Execution Context (FEC).
+            // 2. Function Execution Context (FEC). = (new execution context is created) (its own execution context) (more than one)
+
+        // Phases
+            // The execution context is created in two phases. 
+            // 1. Creation Phase.
+            // 2. Execution Phase.
+            
+        // Call Stack    
+
+        let a = 5;
+        function add(num1, num2){
+            const result = num1 + num2;
+            return result;
+        }
+        const sum = add(4, 5);
+        console.log(sum);
 
 
 
